@@ -8,62 +8,62 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Product {
-    String feed_product_type;
-    String item_sku;
-    String brand_name;
-    String item_name;
-    String external_product_id;
-    String external_product_id_type;
-    String outer_material_type;
-    String recommended_browse_nodes;
-    String material_composition1;
-    String material_composition2;
-    String material_composition3;
-    String material_composition4;
-    String material_composition5;
-    String material_composition6;
-    String material_composition7;
-    String material_composition8;
-    String material_composition9;
-    String material_composition10;
-    String size_name;
-    String color_name;
-    String color_map;
-    String department_name;
-    String size_map;
-    String is_adult_product;
-    String quantity;
-    String standard_price;
-    String main_image_url;
+    private String feedProductType;
+    private String itemSku;
+    private String brandName;
+    private String itemName;
+    private String externalProductId;
+    private String externalProductIdType;
+    private String outerMaterialType;
+    private String recommendedBrowseNodes;
+    private String materialComposition1;
+    private String materialComposition2;
+    private String materialComposition3;
+    private String materialComposition4;
+    private String materialComposition5;
+    private String materialComposition6;
+    private String materialComposition7;
+    private String materialComposition8;
+    private String materialComposition9;
+    private String materialComposition10;
+    private String sizeName;
+    private String colorName;
+    private String colorMap;
+    private String departmentName;
+    private String sizeMap;
+    private String isAdultProduct;
+    private String quantity;
+    private String standardPrice;
+    private String mainImageUrl;
 
     @Override
     public String toString() {
-        return  feed_product_type + '\t' +
-                 item_sku + '\t' +
-                 brand_name + '\t' +
-                 item_name + '\t' +
-                 external_product_id + '\t' +
-                 external_product_id_type + '\t' +
-                 outer_material_type + '\t' +
-                 recommended_browse_nodes + '\t' +
-                 material_composition1 + '\t' +
-                 material_composition2 + '\t' +
-                 material_composition3 + '\t' +
-                 material_composition4 + '\t' +
-                 material_composition5 + '\t' +
-                 material_composition6 + '\t' +
-                 material_composition7 + '\t' +
-                 material_composition8 + '\t' +
-                 material_composition9 + '\t' +
-                 material_composition10 + '\t' +
-                 size_name + '\t' +
-                 color_name + '\t' +
-                 color_map + '\t' +
-                 department_name + '\t' +
-                 size_map + '\t' +
-                 is_adult_product + '\t' +
+        return feedProductType + '\t' +
+                itemSku + '\t' +
+                brandName + '\t' +
+                itemName + '\t' +
+                externalProductId + '\t' +
+                externalProductIdType + '\t' +
+                outerMaterialType + '\t' +
+                recommendedBrowseNodes + '\t' +
+                materialComposition1 + '\t' +
+                materialComposition2 + '\t' +
+                materialComposition3 + '\t' +
+                materialComposition4 + '\t' +
+                materialComposition5 + '\t' +
+                materialComposition6 + '\t' +
+                materialComposition7 + '\t' +
+                materialComposition8 + '\t' +
+                materialComposition9 + '\t' +
+                materialComposition10 + '\t' +
+                sizeName + '\t' +
+                colorName + '\t' +
+                colorMap + '\t' +
+                departmentName + '\t' +
+                sizeMap + '\t' +
+                isAdultProduct + '\t' +
                  quantity + '\t' +
-                 standard_price + '\t' +
-                 main_image_url;
+                standardPrice + '\t' +
+                mainImageUrl;
     }
 }

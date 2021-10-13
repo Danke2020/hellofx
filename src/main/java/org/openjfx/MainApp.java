@@ -7,7 +7,6 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.util.Objects;
-import java.util.ResourceBundle;
 
 
 public class MainApp extends Application {
@@ -18,9 +17,9 @@ public class MainApp extends Application {
 //        Parent root = FXMLLoader.load(getClass().getResource("scene.fxml"));
 
         Scene scene = new Scene(root);
-        scene.getStylesheets().add(getClass().getResource("/styles.css").toExternalForm());
+//        scene.getStylesheets().add(getClass().getResource("/styles.css").toExternalForm());
 
-        stage.setTitle("JavaFX and Gradle");
+        stage.setTitle("演示demo");
         stage.setScene(scene);
         stage.show();
     }
