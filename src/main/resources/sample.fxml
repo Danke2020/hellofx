@@ -5,29 +5,38 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <Pane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
-      minWidth="-Infinity" prefHeight="315.0" prefWidth="838.0" xmlns="http://javafx.com/javafx/8"
+      minWidth="-Infinity" prefHeight="621.0" prefWidth="639.0" xmlns="http://javafx.com/javafx/8"
       fx:controller="org.openjfx.FXMLController">
     <children>
-        <HBox alignment="CENTER" layoutX="38.0" layoutY="23.0" prefHeight="57.0" prefWidth="201.0" spacing="10.0">
+        <HBox alignment="CENTER" layoutX="313.0" layoutY="57.0" prefHeight="57.0" prefWidth="267.0" spacing="25.0">
             <children>
-                <TextField fx:id="key" prefHeight="30.0" prefWidth="69.0"/>
-                <TextField fx:id="name" prefHeight="30.0" prefWidth="69.0"/>
-                <Button mnemonicParsing="false" onAction="#addColorMap" text="+"/>
+                <TextField fx:id="key" prefHeight="30.0" prefWidth="80.0" promptText="color"/>
+                <TextField fx:id="name" prefHeight="30.0" prefWidth="85.0" promptText="Japanese"/>
+                <Button mnemonicParsing="false" onAction="#addColorMap" prefHeight="30.0" prefWidth="36.0" text="+"/>
             </children>
         </HBox>
-        <Button layoutX="529.0" layoutY="171.0" mnemonicParsing="false" onAction="#sayHello" text="&gt;&gt;"/>
-        <TextArea fx:id="source" layoutX="302.0" layoutY="86.0" prefHeight="200.0" prefWidth="200.0"
-                  text="shirt&#9;chenshan13&#9;chone&#9;シャツ メンズ カジュアル ベーシック 七分袖 無地 縞柄 綿 オシャレ シンプル 吸汗 速乾 快適な 柔らかい 春 夏 秋 &#9;&#9;GTIN&#9;綿麻&#9;'2131435051&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;M&#9;ブルー&#9;ブルー&#9;メンズ&#9;M&#9;&#9;50&#9;4499&#9;https://res.cloudinary.com/dhynkjpzk/image/upload/v1597563240/chenshan13/tianlanse_yfprdu.jpg"/>
-        <TextArea fx:id="copy" layoutX="591.0" layoutY="86.0" prefHeight="200.0" prefWidth="200.0"/>
-        <TextField fx:id="size" layoutX="302.0" layoutY="36.0" promptText="size" text="M,L,XL,XXL,XXXL"/>
-        <TableView fx:id="tableView" editable="true" layoutX="44.0" layoutY="86.0" prefHeight="200.0" prefWidth="200.0">
+        <Button layoutX="263.0" layoutY="330.0" mnemonicParsing="false" onAction="#sayHello" text="生成"
+                textAlignment="CENTER" textOverrun="CLIP"/>
+        <TextArea fx:id="source" layoutX="63.0" layoutY="118.0" prefHeight="200.0" prefWidth="200.0"
+                  promptText="parent text"/>
+        <TextArea fx:id="copy" layoutX="62.0" layoutY="377.0" prefHeight="200.0" prefWidth="536.0"
+                  promptText="children text"/>
+        <TextField fx:id="size" layoutX="62.0" layoutY="73.0" promptText="size" text="M,L,XL,XXL,XXXL"/>
+        <TableView fx:id="tableView" editable="true" layoutX="320.0" layoutY="118.0" prefHeight="200.0"
+                   prefWidth="278.0">
             <columns>
                 <TableColumn fx:id="colorKey" prefWidth="75.0" text="color"/>
                 <TableColumn fx:id="colorName" prefWidth="125.0" text="color(Japanese)"/>
+                <TableColumn fx:id="imageUrl" prefWidth="75.0" text="image"/>
             </columns>
             <opaqueInsets>
                 <Insets/>
             </opaqueInsets>
         </TableView>
+        <TextField fx:id="standardPrice" layoutX="62.0" layoutY="24.0" prefHeight="30.0" prefWidth="85.0"
+                   promptText="standardPrice" text="4999"/>
+        <TextField fx:id="folder" layoutX="320.0" layoutY="24.0" promptText="folder" text="chenshan"/>
+        <TextField fx:id="brandName" layoutX="169.0" layoutY="24.0" prefHeight="30.0" prefWidth="93.0"
+                   promptText="brandName" text="test"/>
    </children>
 </Pane>

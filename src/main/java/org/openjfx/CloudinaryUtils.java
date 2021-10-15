@@ -17,10 +17,10 @@ public class CloudinaryUtils {
     }
 
 
-    private static ApiResponseModel searchFolder(String folderName) throws Exception {
+    public static ApiResponseModel searchFolder(String folderName, String fileName) throws Exception {
         Cloudinary cloudinary = new Cloudinary(CONFIG);
         ApiResponse execute = cloudinary.search()
-                .expression("resource_type:image AND folder=" + folderName)
+                .expression("resource_type:image AND folder=" + folderName + " AND filename:" + fileName + "*")
                 .maxResults(30)
                 .execute();
         Gson gson = new Gson();
